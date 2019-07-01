@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import FilterLink from '../containers/FilterLink'
+import FilterLink from './Link'
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../constants/TodoFilters'
 
 const FILTER_TITLES = {
@@ -32,7 +32,7 @@ const Footer = (props) => {
           className="clear-completed"
           onClick={onClearCompleted}
         >Clear completed</button>
-        
+
       }
     </footer>
   )

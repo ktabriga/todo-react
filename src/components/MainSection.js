@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Footer from './Footer'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import TodoList from './TodoList'
 
 const MainSection = ({ todosCount, completedCount, actions }) =>
   (
     <section className="main">
       {
-        !!todosCount && 
+        !!todosCount &&
         <span>
           <input
             className="toggle-all"
@@ -18,7 +18,7 @@ const MainSection = ({ todosCount, completedCount, actions }) =>
           <label onClick={actions.completeAllTodos}/>
         </span>
       }
-      <VisibleTodoList />
+      {/*<TodoList />*/}
       {
         !!todosCount &&
         <Footer
